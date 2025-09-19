@@ -1,0 +1,43 @@
+.form {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 16px
+}
+
+.form input {
+    flex: 1;
+    min-width: 140px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px
+}
+
+.form button {
+    padding: 10px 14px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer
+}
+
+.form button:hover {
+    background: #0056b3
+}
+
+.error {
+    color: #b00020;
+    margin-top: 6px;
+    width: 100%
+}
+
+@media(max-width:720px) {
+    .form {
+        flex-direction: column
+    }
+
+    .form button {
+        width: 100%
+    }
+}

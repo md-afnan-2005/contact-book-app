@@ -1,0 +1,56 @@
+.list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background: #fafafa;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05)
+}
+
+.info {
+    display: flex;
+    flex-direction: column
+}
+
+.name {
+    font-weight: 600
+}
+
+.email,
+.phone {
+    font-size: 13px;
+    color: #555
+}
+
+.del {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 6px;
+    cursor: pointer
+}
+
+.del:hover {
+    background: #a71d2a
+}
+
+.empty {
+    text-align: center;
+    color: #666;
+    padding: 8px
+}
+
+@media(max-width:720px) {
+    .list {
+        grid-template-columns: 1fr
+    }
+}
